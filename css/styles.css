@@ -31,12 +31,12 @@ link text:#000023
 
   /* other repeated styles e.g.body font sizes */
   --size: 16px;
-  --family: 'source sans pro', sans-serif;
+  --family: "source sans pro", sans-serif;
   --line-height: 1.6;
   --weight: 400;
 
   /* main header styling */
-  --h1-family: 'Montserrat', sans-serif;
+  --h1-family: "Montserrat", sans-serif;
   --h1-weight: 700;
   --h1-size: 30px;
   --h1-responsive: 22px;
@@ -186,11 +186,12 @@ button,
 }
 
 .navigation-list__item--active {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .profile-container,
-.about, .contact {
+.about,
+.contact {
   max-width: 700px;
   padding-top: 5em;
   margin: 0 auto;
@@ -221,7 +222,8 @@ text-decoration: none;
   justify-content: center;
 }
 
-.projectList__item, .portfolio__item {
+.projectList__item,
+.portfolio__item {
   background-color: var(--tertiary-color);
   padding: 10px;
   color: var(--secondary-color);
@@ -238,8 +240,8 @@ text-decoration: none;
 }
 
 .projectList__title {
-text-align: center;
-padding-top: 1em;
+  text-align: center;
+  padding-top: 1em;
 }
 
 .berlin-illustration {
@@ -250,24 +252,23 @@ padding-top: 1em;
 .responsive {
   display: block;
   margin: auto auto;
- height:auto;
- width: 100%;
- max-width: 320px;
+  height: auto;
+  width: 100%;
+  max-width: 320px;
 }
-.myflix_img{
+.myflix_img {
   min-height: 180px;
 }
-.portfolio_image{
-  vertical-align:middle;
-  text-align:center;
+.portfolio_image {
+  vertical-align: middle;
+  text-align: center;
 }
 
-.portfolio_link_container{  
-    width: 100%;
-    text-align: center;
+.portfolio_link_container {
+  width: 100%;
+  text-align: center;
+}
 
-  }
- 
 @media all and (max-width: 500px) {
   .projectList {
     grid-template-columns: 1fr;
@@ -375,4 +376,40 @@ padding-top: 1em;
   .navigation_list li {
     display: block;
   }
+}
+
+.project {
+  width: 400px;
+  height: 250px;
+}
+
+.portfolio__item {
+  border-radius: 1.2rem;
+  box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12),
+    0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24);
+  transition: 0.3s;
+  background-color: #023440;
+}
+
+.portfolio__item .portfolio__item-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
+
+.portfolio__item .portfolio__item-wrapper .portfolio__item-image-container {
+  padding: 5%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background: linear-gradient(-45deg, #023440, #023440 70%, #fdcbbf 0, #fdcbbf);
+}
+
+.box {
+  background-color: #fff;
+  color: #000;
+  border: 5px solid;
+  border-color: rgba(219, 246, 248, 0.904);
+  border-radius: 5%;
 }
